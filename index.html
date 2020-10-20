@@ -54,7 +54,8 @@ color: red;
 transition-duration: 0.3s;
 cursor: pointer;
          }
-   .fullbody{
+   @fullbody{
+    
     font-family: myFirstFont;
    src: url(sansation_light.woff);
    }
@@ -76,7 +77,8 @@ cursor: pointer;
         </style>
     </head>
 <body >
-  <div id="shop" class="fullbody">
+  <div id="shop">
+      @fullbody
 <div :class="{'classed':alerts}" style="">
     <div class="header" >
         <img src="https://image.shutterstock.com/image-vector/drawing-sketch-lord-venkateshwara-balaji-600w-1728916228.jpg" width="43px" style="display: inline;position: relative;" height="43px" style="margin-left: 20px;" >
