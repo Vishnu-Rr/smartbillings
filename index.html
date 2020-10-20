@@ -62,9 +62,17 @@ cursor: pointer;
        border: 1px solid darkgray;
    }
    .scroll{
-       max-height: 82%;
+       max-height: 90%;
        overflow-y: scroll;
+   }.eee:hover{
+       transition: 0.4s;
+       background-color: rgb(164, 198, 226);
    }
+   .ee:hover{
+       transition: 0.4s;
+       background-color: rgb(241, 156, 129);
+   }
+ 
         </style>
     </head>
 <body >
@@ -103,7 +111,7 @@ cursor: pointer;
 
     <div  v-if="activeTab == 'products'" >
         <h1 style=" margin-left: 255px;">Manage Products</h1>
-    <div style="overflow-y: scroll;max-height: 440px;" >
+    <div style="overflow-y: scroll;max-height: 400px;" >
 
       <table class="table" style="width: 91%; " >
        <tr>
@@ -129,7 +137,18 @@ cursor: pointer;
       <br>
       
     </div>
-
+    <br>
+    <div style="text-align: center;">
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+        width="22" height="22"
+        viewBox="0 0 24 24"
+        style=" fill:#000000;display: inline;position: relative;top: 7px;"><path d="M 12 2 C 6.4889971 2 2 6.4889971 2 12 C 2 17.511003 6.4889971 22 12 22 C 17.511003 22 22 17.511003 22 12 C 22 6.4889971 17.511003 2 12 2 z M 12 4 C 
+        16.430123 4 20 7.5698774 20 12 C 20 16.430123 16.430123 20 12 20 C 7.5698774 20 4 16.430123 4 12 C 4 7.5698774 7.5698774 4 12 4 z M 12 7.0058594 C 10.718253 7.0058594 9.4369556 7.4927318 8.4648438 8.4648438 C 6.5206197 
+        10.409068 6.5206197 13.590932 8.4648438 15.535156 C 10.409068 17.47938 13.590932 17.47938 15.535156 15.535156 L 14.121094 14.121094 C 12.941318 15.30087 11.058682 15.30087 9.8789062 14.121094 C 8.6991302 12.941318 8.6991302 
+        11.058682 9.8789062 9.8789062 C 11.058682 8.6991302 12.941318 8.6991302 14.121094 9.8789062 L 15.535156 8.4648438 C 14.563044 7.4927317 13.281747 7.0058594 12 7.0058594 z "></path></svg>
+        <p style="display: inline;">copyright-2020 by Sri Venkateshwara Automobiles & spares</p>
+        <p>N.G.A complex kilpennathur,thiruvannamalai 604 601</p>
+    </div>
 
 
     </div>
@@ -209,44 +228,49 @@ cursor: pointer;
     <br>
 <br>
     </div>
-    <div v-if="activeTab=='product'"  style="margin-left: 550px;  ">
+    <div v-if="activeTab=='product'"  style="text-align: center;">
+        
    <h1 >Enter the Product Details</h1>
-    <div style="padding: 19px; text-align: left;">
+    <div style="padding: 19px; ">
         Product Name:
         <input type="text"  v-model="name" style="margin-left: 34px;" >
-        <p v-if="name==''" style="margin-left: 138px;margin-bottom: -19px;margin-top: 1px ;font-size: small;color: red;">* Please enter the product name</p>
+        <p v-if="name==''" style="margin-left: 324px; margin-bottom: -19px;margin-top: 2px ;font-size: small;color: red;">* Please enter the product name</p>
     </div>
    
-        <div style="padding: 19px; text-align: left;" >
+        <div style="padding: 19px; " >
         Serial Code:
         <input type="text" v-model="serial" style="margin-left: 54px;">
-        <p v-if="serial==''"  style="margin-left: 138px;margin-bottom: -19px;margin-top: 1px;font-size: small;color: red;">* please enter the serial code</p>
+        <p v-if="serial==''"  style="margin-left: 337px;margin-bottom: -19px;margin-top: 2px;font-size: small;color: red;">* please enter the serial code</p>
     </div>
-    <div style="padding: 19px; text-align: left;">
+    <div style="padding: 19px;">
           MRP       :
           <input type="number" v-model="mrp" style="margin-left: 101px;">
-          <p v-if="mrp==''"  style="margin-left: 161px;margin-bottom: -19px;margin-top: 1px;font-size: small;color: red;">* please enter the MRP</p>
+          <p v-if="mrp==''"  style="margin-left: 339px;margin-bottom: -19px;margin-top: 2px;font-size: small;color: red;">* please enter the MRP</p>
     
     </div>
-    <div style="padding: 19px; text-align: left;">
+    <div style="padding: 19px; ">
           stock Quantity:
           <input type="number" v-model="Quantity" style="margin-left: 31px;">
-          <p v-if="Quantity==''"  style="margin-left: 134px;margin-bottom: -19px;margin-top: 1px;font-size: small;color: red;">* please enter the stock Quantity</p>
+          <p v-if="Quantity==''"  style="margin-left: 329px;margin-bottom: -19px;margin-top: 2px;font-size: small;color: red;">* please enter the stock Quantity</p>
     </div>
     
-    <div style="padding: 19px; text-align: left;">
+    <div style="padding: 19px;">
           Price:
           <input type="number" v-model="price" style="margin-left: 100px;">
-          <p v-if="price==''" style="margin-left: 161px;margin-bottom: -19px;margin-top: 1px;font-size: small;color: red;">* please enter the price</p>
+          <p v-if="price==''" style="margin-left: 325px;margin-bottom: -19px;margin-top: 2px;font-size: small;color: red;">* please enter the price</p>
 
+    
+    <br>
+    <br>
     </div>
-    <br>
-    <br>
-          <button  v-on:click="functiona()"  style="margin-left: 142px;" >Add To Cart</button>
+    <div style="margin-left: 145px;"> 
+          <button  v-on:click="functiona()" >Add To Cart</button>
+          </div>
+          <br>
+
           <br>
           <br>
-          <br>
-          <div style="text-align: center; margin-right: 333px;margin-left: -56px;">
+          <div >
               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
               width="22" height="22"
               viewBox="0 0 24 24"
@@ -254,8 +278,8 @@ cursor: pointer;
               16.430123 4 20 7.5698774 20 12 C 20 16.430123 16.430123 20 12 20 C 7.5698774 20 4 16.430123 4 12 C 4 7.5698774 7.5698774 4 12 4 z M 12 7.0058594 C 10.718253 7.0058594 9.4369556 7.4927318 8.4648438 8.4648438 C 6.5206197 
               10.409068 6.5206197 13.590932 8.4648438 15.535156 C 10.409068 17.47938 13.590932 17.47938 15.535156 15.535156 L 14.121094 14.121094 C 12.941318 15.30087 11.058682 15.30087 9.8789062 14.121094 C 8.6991302 12.941318 8.6991302 
               11.058682 9.8789062 9.8789062 C 11.058682 8.6991302 12.941318 8.6991302 14.121094 9.8789062 L 15.535156 8.4648438 C 14.563044 7.4927317 13.281747 7.0058594 12 7.0058594 z "></path></svg>
-              <p style="display: inline;">copyright-2020 by Sri Venkateshwara Automobiles & spares</p>
-              <p>N.G.A complex kilpennathur,thiruvannamalai 604 601</p>
+              <p style="display: inline; text-align: center;">copyright-2020 by Sri Venkateshwara Automobiles & spares
+            </p><p>N.G.A complex kilpennathur,thiruvannamalai 604 601</p>
           </div>
 </div>
 <div v-if="activeTab=='showmech'">
@@ -309,7 +333,7 @@ margin-top: 168px; color: grey;
 </div>
 
 
-<div v-if="addmech" style="margin-left: 484px; top:135px; text-align: center;background-color:rgb(11, 207, 142); position: fixed;width: 350px;height: 300px;border-radius: 50px;">
+<div v-if="addmech" style="margin-left: 484px; top:135px; text-align: center;background-color:rgb(11, 207, 142); position: fixed;width: 350px;height: 300px;border-radius: 35px;">
    
    <h2>enter Customer details</h2> 
    <div style="padding:1px;">customer name:
@@ -323,9 +347,25 @@ margin-top: 168px; color: grey;
     Phone number:<input type="number" v-model="phone" style="margin-left:15px">
 
 </div>
+<br>
+<br>
+        <br> 
+</ber>
+<button v-on:click="close()" class="eee" style="
+    float: right;
+    width: 175px;
+    height: 38px;
+    font-size: 18px;
+    border: 0px;
+    font-family: unset;" >add</button>
+<button v-on:click="uls()" class="ee" style="
+    float: right;
+    width: 175px;
+    height: 38px;
+     border: 0px;
+    font-size: 18px;
 
-<button v-on:click="close()" style="margin-top: 44px;">add</button>
-<button v-on:click="uls()">close</button>
+    font-family: unset;">close</button>
 
 </div>
 

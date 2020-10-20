@@ -3,7 +3,7 @@ var app = new Vue({
     data:{
 addmech:false,
       add:false,
-    
+    nnn:true,
       amot:'',
       clos:false,
 names:'',
@@ -75,6 +75,7 @@ mounted(list) {
   if (mechanics != null) {
     this.detail = JSON.parse(mechanics)
 }
+
 },
 computed: {
   totalBillAmount: function() {
