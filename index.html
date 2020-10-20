@@ -3,9 +3,9 @@
         <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 
         <style>
-            .classed{
-                filter: blur(6px);
-            }
+.classed{
+    filter: blur(6px);
+}
       
       .header {
           border-bottom: 1px solid darkgray;
@@ -93,7 +93,7 @@ cursor: pointer;
          <p style="float: left; margin-left: 36px;margin-top: -14px;" :class="{active: activeTab == 'products'}" class="div1" >Manage Products</p>
     </div>
     <div style="margin-left: 22px;"  v-on:click="activeTab = 'product'" >
-       <img width="28px" style="float: left;position: relative;top: 6px;" height="28px" src="https://img.icons8.com/color/48/000000/add-property.png"/>
+       <img width="28px" style="float: left;position: relative;top: 6px;" height="28px" class="fff" src="https://img.icons8.com/color/48/000000/add-property.png"/>
        <p style="float: left; margin-left: 7px;margin-top: 9px;" :class="{active: activeTab == 'product'}" class="div1" >Add Product</p>
     </div>
        <div style="margin-left: 20px;margin-top: 58px;"  v-on:click="activeTab = 'showmech'" >
