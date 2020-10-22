@@ -295,9 +295,9 @@ if(this.name=='',this.serial=='',this.mrp=='',this.price=='',this.Quantity==''){
           
 }, 
 prints(){
-  for(i=0;i<this.list.length;i++){
-
-  }
+    
+window.print()
+  
 },
 lists(){
   this.alert=!this.alert
