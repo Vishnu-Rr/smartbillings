@@ -99,7 +99,7 @@ cursor: pointer;
   <div id="shop" class="fullbody">
 <div :class="{'classed':alerts}" >
 <div class="dddd">
-    <div class="header" >
+    <div class="header" >                                                                                  
         <img src="https://image.shutterstock.com/image-vector/drawing-sketch-lord-venkateshwara-balaji-600w-1728916228.jpg" width="43px" style="display: inline;position: relative;" height="43px" style="margin-left: 20px;" >
     </div>
         <div style="float: left; " >
@@ -126,7 +126,7 @@ cursor: pointer;
 </div>
     </div >
 
-</div>
+
 
 
 
@@ -251,6 +251,7 @@ cursor: pointer;
     <br>
 <br>
     </div>
+    </div>
     <div v-if="activeTab=='product'"  style="text-align: center;">
         
    <h1 >Enter the Product Details</h1>
@@ -286,16 +287,14 @@ cursor: pointer;
     <br>
     <br>
     </div>
-    <div style="margin-left: 145px;"> 
-          <button  v-on:click="functiona()" style="
-
-              border: 0px;
+    <div style="margin:auto;
+    text-align: center;
+    font-size: 17px;
               width: 120px;
               height: 25px;
               background-color: khaki;
               border-radius: 9px;
-              font-family: inherit;
-              font-weight: 900">Add To Cart</button>
+             " v-on:click="functiona()" >Add To Cart
           </div>
           <br>
 
@@ -354,6 +353,7 @@ margin-top: 168px; color: grey;
               <p>N.G.A complex kilpennathur,thiruvannamalai 604 601</p>
           </div>
         </div>
+</div>        
 
 <div v-if="alert"  style="margin-left: 484px;  text-align: center;background-color:lightpink; position: fixed;width: 442px;height: 385px;border-radius: 50px; top: 105px    ;">
     <h1> Product details added in  list Successfully</h1>
@@ -380,7 +380,6 @@ margin-top: 168px; color: grey;
 <br>
 <br>
         <br> 
-</ber>
 <button v-on:click="close()" class="eee" style="
     float: right;
     width: 175px;
@@ -409,9 +408,9 @@ margin-top: 168px; color: grey;
     <button v-on:click="main()">OK</button>
 </div>
 
- 
+ </div>
 
-  </div>
+  
 </body>
 
 <script src="shopvue.js"></script>
