@@ -151,7 +151,7 @@ this.names=''
 this.shop=''
 this.phone=''
 localStorage.setItem('mechanics', JSON.stringify(this.detail))
-
+this.reset()
 },
 adds(detail){
 this.activeTab='bills'
