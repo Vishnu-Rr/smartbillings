@@ -201,8 +201,8 @@ cursor: pointer;
                         </div>
 </div>
 <div>
-    <h4 style="float: left; position: relative;left: 56px;">Customer name : <input type="text"></h4>
-    <h4 style="float: right; position: relative;right: 56px;" >Phone Number:<input type="number"></h4>
+    <h4 style="float: left; position: relative;left: 56px;" >Customer name : <input v-model="namess" type="text"></h4>
+    <h4 style="float: right; position: relative;right: 56px;" >Phone Number:<input v-model="cell" type="number"></h4>
     <div >
       <table style="width:90%;" class="rrrr" >
 
@@ -387,7 +387,7 @@ margin-top: 168px; color: grey;
 
 </div>
 <div style="padding:18px;">
-    Phone number:<input type="number" v-model="phone" style="margin-left:15px">
+    Phone number:<input type="number" v-model="phone" placeholder="cell"  style="margin-left:15px">
 
 </div>
 <br>
