@@ -89,7 +89,6 @@ cursor: pointer;
    .scroll{
        max-height: 88%;
        overflow-y: scroll;
-       -webkit-appearance:scrollbarbutton-down;
    }.eee:hover{
        transition: 0.4s;
        background-color: rgb(164, 198, 226);
@@ -324,7 +323,7 @@ cursor: pointer;
 <div v-if="activeTab=='showmech'">
     <h3 style="padding-top:11px;margin-left:244px;">
     </h3>
-    <table style="margin-left: 482px;margin: auto;" v-if="detail.length">
+    <table style="margin-left: 482px;margin: auto;-webkit-appearance: scrollbarbutton-down;" v-if="detail.length">
         <tr>
             <th>Customer Name</th>
             <th>Cell  Number</th>
