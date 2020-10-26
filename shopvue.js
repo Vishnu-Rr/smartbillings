@@ -7,6 +7,8 @@ addmech:false,
       amot:'',
       clos:false,
 names:'',
+sss:'',
+ccc:'',
 shop:'',
 phone:'',
       detail:[],
@@ -115,6 +117,8 @@ return final = date1 +"/"+eval(months+1)+"/"+year
     classe(){
 this.addmech=!this.addmech
 this.alerts=!this.alerts
+this.names= this.sss
+this.phone=this.ccc
     },
     clearss(index){
 this.detail.splice(index,1)
