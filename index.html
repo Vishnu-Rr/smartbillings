@@ -89,6 +89,7 @@ cursor: pointer;
    .scroll{
        max-height: 88%;
        overflow-y: scroll;
+       -webkit-appearance: none;
    }.eee:hover{
        transition: 0.4s;
        background-color: rgb(164, 198, 226);
@@ -139,7 +140,7 @@ cursor: pointer;
 
     <div  v-if="activeTab == 'products'" >
         <h1 style=" margin-left: 255px;">Manage Products</h1>
-    <div style="overflow-y: scroll;-webkit-appearance: none; max-height: 400px;" >
+    <div style="overflow-y: scroll; max-height: 400px;" >
 
       <table class="table" style="width: 91%; " >
        <tr>
