@@ -171,6 +171,8 @@ main(){
 },
 
  reset(index){
+   this.ccc='',
+   this.sss='',
 this.billings = [{
   product: null,
   serial: null,
