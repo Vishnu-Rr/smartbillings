@@ -25,6 +25,13 @@ display: none;
          }
    
      } 
+     .center{
+         visibility: hidden;
+     }
+     .mains:hover{
+
+}
+     
       .header {
           border-bottom: 1px solid darkgray;
           border-top: 1px solid rgb(29, 23, 23) ;
@@ -132,7 +139,7 @@ cursor: pointer;
 
     <div  v-if="activeTab == 'products'" >
         <h1 style=" margin-left: 255px;">Manage Products</h1>
-    <div style="overflow-y: scroll;max-height: 400px;" >
+    <div style="overflow-y: scroll;-webkit-appearance: none; max-height: 400px;" >
 
       <table class="table" style="width: 91%; " >
        <tr>
@@ -145,7 +152,7 @@ cursor: pointer;
          <th>Actions</th>
     </tr>
 
-       <tr class="td" v-for="(list,index) in list" >
+       <tr class="td" v-for="(list,index) in list" class="mains">
         <td style="width: 270px;" class="title">{{list.title}}</td>
         <td >{{list.seriala}}</td>
         <td style="width: 60px;">{{list.Mrp}}</td>
@@ -159,6 +166,7 @@ cursor: pointer;
       
     </div>
     <br>
+    <button class="center">scigsacb</button>
     <div style="text-align: center;">
         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
         width="22" height="22"
