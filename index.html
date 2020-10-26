@@ -22,6 +22,7 @@ display: none;
          }
          .mmmm{
              -webkit-appearance: none;
+            
          }
    
      } 
@@ -74,6 +75,7 @@ border-collapse: collapse;
                 75% {background-color: red; color: white; }
                 100% {background-color: white; color:black;}
             }
+
 
             .div1:hover, .div1.active{
 color: red;
@@ -198,6 +200,8 @@ cursor: pointer;
       <div style="float:right;margin-top:-41px; margin-right:93px;font-size: 17px;width: 50px;height: 25px;background-color: khaki;border-radius: 9px; text-align:center;" v-on:click="prints()">print
                         </div>
 </div>
+<div>
+    <h4>Customer name : <input type="text"></h4>
 <div >
       <table style="width:90%;" class="rrrr" >
 
@@ -323,7 +327,7 @@ cursor: pointer;
 <div v-if="activeTab=='showmech'">
     <h3 style="padding-top:11px;margin-left:244px;">
     </h3>
-    <table style="margin-left: 482px;margin: auto;-webkit-appearance: scrollbarbutton-down;" v-if="detail.length">
+    <table style="margin-left: 482px;margin: auto;" v-if="detail.length">
         <tr>
             <th>Customer Name</th>
             <th>Cell  Number</th>
