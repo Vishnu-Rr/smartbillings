@@ -24,14 +24,18 @@ display: none;
              -webkit-appearance: none;
             
          }
-   
+         .name{
+             border-radius: 0px;
+             margin-left: 20px;
+         }
+   .num{
+       border-radius: 0px;
+   }
      } 
      .center{
          visibility: hidden;
      }
-     .mains:hover{
 
-}
      
       .header {
           border-bottom: 1px solid darkgray;
@@ -199,8 +203,8 @@ cursor: pointer;
                         </div>
 </div>
 <div>
-    <h4 style="float: left; position: relative;left: 56px;" >Customer name : <input  type="text" v-model="sss"></h4>
-    <h4 style="float: right; position: relative;right: 56px;" >Phone Number:<input type="number" v-model="ccc"></h4>
+    <h4 style="float: left; position: relative;left: 56px;" >Customer name : <input  type="text" v-model="sss" class="name"></h4>
+    <h4 style="float: right; position: relative;right: 56px;" >Phone Number:<input type="number" v-model="ccc" class="num"></h4>
 </div>
     <div >
       <table style="width:90%;" class="rrrr" >
