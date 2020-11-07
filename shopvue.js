@@ -26,7 +26,7 @@ bills:false,
 serials:'',
 low:'',
 hide:false,
-activeTab: 'bills',
+activeTab: 'Cash_Memo',
 date:'',
 billings:[
 {

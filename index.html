@@ -110,7 +110,7 @@ cursor: pointer;
   <div id="shop" class="fullbody">
 <div :class="{'classed':alerts}" >
 <div class="dddd">
-<title>Smart Billings{{activeTab}}</title>
+<title>Smart Billings   : {{activeTab}}</title>
 
     <div class="header" >                                                                                  
         <img src="https://image.shutterstock.com/image-vector/drawing-sketch-lord-venkateshwara-balaji-600w-1728916228.jpg" width="43px" style="display: inline;position: relative;" height="43px" style="margin-left: 20px;" >
@@ -123,17 +123,17 @@ cursor: pointer;
          <p style="float: left; margin-left: 6px;margin-bottom: 1px;"  :class="{active: activeTab == 'bills'}" class="div1">Bill Entry</p>
 </div>
     
-     <div style="margin-left: 20px;margin-top: 58px;"  class="mainss" v-on:click="activeTab = 'products'" >
+     <div style="margin-left: 20px;margin-top: 58px;"  class="mainss" v-on:click="activeTab = 'product_list'" >
          <img width="28px" style="float: left;position: relative;top: 9px;" height="28px" src="https://img.icons8.com/fluent/48/000000/product-documents.png"/>
-         <p style="float: left; margin-left: 36px;margin-top: -14px;" :class="{active: activeTab == 'products'}" class="div1" >Manage Products</p>
+         <p style="float: left; margin-left: 36px;margin-top: -14px;" :class="{active: activeTab == 'product_list'}" class="div1" >Manage Products</p>
     </div>
-    <div style="margin-left: 22px;"  v-on:click="activeTab = 'product'" >
+    <div style="margin-left: 22px;"  v-on:click="activeTab = 'Add_product'" >
        <img width="28px" style="float: left;position: relative;top: 6px;" height="28px" class="fff" src="https://img.icons8.com/color/48/000000/add-property.png"/>
-       <p style="float: left; margin-left: 7px;margin-top: 9px;" :class="{active: activeTab == 'product'}" class="div1" >Add Product</p>
+       <p style="float: left; margin-left: 7px;margin-top: 9px;" :class="{active: activeTab == 'Add_product'}" class="div1" >Add Product</p>
     </div>
-       <div style="margin-left: 20px;margin-top: 58px;"  v-on:click="activeTab = 'showmech'" >
+       <div style="margin-left: 20px;margin-top: 58px;"  v-on:click="activeTab = 'Pending_Bills'" >
          <img width="28px" style="float: left;position: relative;top: 45px;    left: -122px;" height="28px" src="https://img.icons8.com/color/50/000000/payment-history.png"/>
-         <p style="float: left; margin-left: 36px;margin-top: 4px;" :class="{active: activeTab == 'showmech'}" class="div1" >pending Bills
+         <p style="float: left; margin-left: 36px;margin-top: 4px;" :class="{active: activeTab == 'Pending_bills'}" class="div1" >pending Bills
              <p v-if="detail.length" style="float: left;    position: relative;top: -22px;left: 2px;background-color: lightcoral;color: white;width: 24px;border-radius: 13px;text-align: center;"> {{detail.length}}</p></p>
     </div>
 </div>
@@ -143,7 +143,7 @@ cursor: pointer;
 
 
 
-    <div  v-if="activeTab == 'products'" >
+    <div  v-if="activeTab == 'product_list'" >
         <h1 style=" margin-left: 255px;">Manage Products</h1>
     <div style="overflow-y: scroll; max-height: 400px;" >
 
@@ -190,7 +190,7 @@ cursor: pointer;
 
 
  
-    <div v-if="activeTab == 'bills'" class="scroll" >
+    <div v-if="activeTab == 'Cash_Memo'" class="scroll" >
 
 
 <div>
@@ -270,7 +270,7 @@ cursor: pointer;
 <br>
     </div>
     </div>
-    <div v-if="activeTab=='product'"  style="text-align: center;">
+    <div v-if="activeTab=='Add_product'"  style="text-align: center;">
         
    <h1 >Enter the Product Details</h1>
     <div style="padding: 19px; ">
@@ -330,7 +330,7 @@ cursor: pointer;
             </p><p>N.G.A complex kilpennathur,thiruvannamalai 604 601</p>
           </div>
 </div>
-<div v-if="activeTab=='showmech'">
+<div v-if="activeTab=='Pending_Bills'">
     <h3 style="padding-top:11px;margin-left:244px;">
     </h3>
     <table style="margin-left: 482px;margin: auto;" v-if="detail.length">
