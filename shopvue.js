@@ -161,6 +161,7 @@ this.totalBillAmount=detail.sname
 uls(){
   this.addmech=!this.addmech
 this.alerts=!this.alerts
+this.shop=""
 },
 lists(){
 this.alert=!this.alert
