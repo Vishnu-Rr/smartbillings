@@ -28,8 +28,7 @@ low:'',
 hide:false,
 activeTab: 'Cash_Memo',
 date:'',
-theme:false,
-splash:false,
+
 billings:[
 {
   product: null,
@@ -172,10 +171,7 @@ main(){
   this.clos=!this.clos
   this.alerts=!this.alerts
 },
-classes(){
-this.theme=!this.theme
-this.splash=!this.splash
-},
+
 
  reset(index){
    this.ccc='',
