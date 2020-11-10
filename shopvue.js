@@ -28,6 +28,8 @@ low:'',
 hide:false,
 activeTab: 'Cash_Memo',
 date:'',
+theme:false,
+splash:false,
 billings:[
 {
   product: null,
@@ -154,7 +156,7 @@ localStorage.setItem('mechanics', JSON.stringify(this.detail))
 this.reset()
 },
 adds(detail){
-this.activeTab='bills'
+this.activeTab='Cash_Memo'
 this.billings = detail.bill             
 this.totalBillAmount=detail.sname
 },
@@ -169,6 +171,10 @@ this.alert=!this.alert
 main(){
   this.clos=!this.clos
   this.alerts=!this.alerts
+},
+classes(){
+this.theme=!this.theme
+this.splash=!this.splash
 },
 
  reset(index){
