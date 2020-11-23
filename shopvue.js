@@ -92,21 +92,13 @@ computed: {
     return totalAmount
     
   },
-  datetimes:function(){
-  var final= null;
-    var date1=new Date().getDate();
-    var months = new Date().getMonth();
-var year = new Date().getFullYear();
-return final = date1 +"/"+eval(months+1)+"/"+year
-},
-
+  
   discount: function() {
     let Totalmrp = 0
     for (var i=0; i< this.billings.length; i++) {
       let bill = this.billings[i]
       if (bill.fxd != null) {
         Totalmrp = parseInt(Totalmrp) + parseInt(bill.fxd)
-    
       }
     }
     return Totalmrp - this.totalBillAmount
@@ -217,10 +209,6 @@ this.billings = [{
  clears(index){
 this.list.splice(index,1)
 localStorage.setItem('products', JSON.stringify(this.list))
-
-},
-funct(list){
-  localStorage.setItem('products', JSON.stringify(this.list))
 
 },
 
